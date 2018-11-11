@@ -1,3 +1,14 @@
+/*!
+ * Copyright (c) 2018
+ * Powered by Alexis M. (iSnkh)
+ * snkh.me  - https://iSnkh.github.io
+ *
+ * This project can not be copied and/or distributed without permission of Alexis M. (iSnkh)
+ * Theme powered by ColorLib HTML 5
+ * Under license: https://snkh.me/LICENSE
+ *
+ */
+
 .section-gap {
 	padding: 100px 0;
 }
@@ -68,9 +79,10 @@
 //--------- Start Banner Area -------------//
 
 .banner-area {
-	background: url(../img/banner-bg.jpg) no-repeat center center/cover;
+	background: url(../img/banner-bg.png) no-repeat center center/cover;
+
 	.overlay-bg {
-		background: rgba($primary-color, .8);
+		background: rgba($primary-color, .6);
 	}
 	.fullscreen {
 		@include media-breakpoint-down (sm) {
@@ -219,7 +231,7 @@
 
 //--------- Start Service Area -------------//
 .service-area {
-	background: #f3487f;
+	background: $primary-color;
 }
 .single-service {
 	.top {
@@ -233,7 +245,7 @@
 			span {
 				@include transition();
 				font-size: 36px;
-				color: #f3487f;
+				color: $primary-color;
 			}
 			h3 {
 				@include transition();
@@ -254,7 +266,7 @@
 	}
 	&:hover {
 		.top {
-			background: #f3487f;
+			background: #937fd2;
 			.content {
 				span {
 					color: $white;
@@ -512,7 +524,8 @@ footer {
 	margin-bottom: 30px;
 }
 .footer-bottom {
-	padding-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 	.footer-text {
 		color: $white;
 		i {
