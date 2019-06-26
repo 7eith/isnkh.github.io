@@ -1,6 +1,6 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/nuxt.snkh/'
+    base: '/snkh.me/'
   }
 } : {}
 
@@ -11,11 +11,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nuxt.snkh',
+    title: 'Alexis ’Snkh’ M.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'fullstack dev, this is my portfolio in maintenance.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
