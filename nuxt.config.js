@@ -6,6 +6,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 module.exports = {
   ...routerBase,
+  plugins: [{ src: 'plugins/vue-typer.js', ssr: false}],
   /*
   ** Headers of the page
   */
@@ -24,6 +25,10 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  /*
+  ** SCSS
+  */
+  css: ['@/assets/app.scss'],
   /*
   ** Build configuration
   */

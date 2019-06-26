@@ -1,0 +1,31 @@
+/* **************************************************************************** *
+ *
+ * _loading.scss
+ *
+ * by: Snkh <iamsnkh@pm.me>
+ *
+ * Created: 26/06/2019 01:39 by Snkh
+ * Project: snkh.me
+ *
+ **************************************************************************** */
+
+.loading-container {
+  background-color: #DDDDDD;
+  border-radius: 6px;
+  width: 500px;
+  max-width: 85vw;
+  height: 10px;
+  margin-bottom: 10px;
+
+  .loading-bar {
+    margin-top: 8px;
+    border-radius: 6px;
+    height: 10px;
+    transition: width 7s;
+  }
+
+}
+
+.vue-typer .custom.char {
+  color: white;
+}
