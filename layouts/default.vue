@@ -1,6 +1,6 @@
 <template>
   <div>
-    <loading />
+    <loading class="animated fadeIn"/>
     <nuxt/>
   </div>
 </template>

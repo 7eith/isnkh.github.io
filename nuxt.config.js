@@ -7,6 +7,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 module.exports = {
   ...routerBase,
   plugins: [{ src: 'plugins/vue-typer.js', ssr: false}],
+  modules: ['@neneos/nuxt-animate.css'],
   /*
   ** Headers of the page
   */
