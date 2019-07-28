@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <loading class="animated fadeIn"/> -->
+    <loading class="animated fadeIn"/>
     <navbar></navbar>
     <nuxt class="animated fadeInDown"/>
   </div>

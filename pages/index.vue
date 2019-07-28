@@ -3,6 +3,3 @@
     <!-- Hello -->
   </section>
 </template>
-
-<script>
-</script>
