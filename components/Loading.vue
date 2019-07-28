@@ -1,47 +1,25 @@
 <template>
-  <section class="loading">
-    <vue-typer :text="loadingText" :repeat="loadingRepeat"></vue-typer>
-    <div class="loading-container">
-      <div class="loading-bar" v-bind:style="{ width: loadingNumber + '%', backgroundColor: loadingColor }"/>
+  <div class="loadingComponent" v-if="loadingApplication">
+    <div class="loading">
+      <p>Alexis 'iSnkh' M.</p>
+      <div class="loading-container">
+        <div class="loading-bar" v-bind:style="{ width: loadingNumber + '%' }"/>
+      </div>
     </div>
-    <vue-typer :text="loadingFooter"></vue-typer>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      loadingText: 'Initializing...',
       loadingNumber : 0,
-      loadingColor: '#00C58E',
-      loadingRepeat: 0,
-      loadingFooter: ''
+      loadingApplication: true
     }
   },
   mounted: function () {
-    setTimeout(() => {
-      this.loadingText = ' > Logging as snkh@snkh.me'
-    }, 0);
-
-    setTimeout(() => {
-      this.loadingNumber = 90
-      this.loadingText = 'snkh@snkh.me [master]: Loading...'
-    }, 2500);
-
-    setTimeout(() => {
-      this.loadingColor = 'red'
-      this.loadingText = ' > Error!'
-    }, 9500);
-
-    setTimeout(() => this.loadingText = '> Maintenance mode: [OK]', 12000);
-
-    setTimeout(() => {
-      this.loadingRepeat = 69
-      this.loadingColor = 'rgb(92, 81, 157)'
-      this.loadingText = '[irc] snkh@snkh.me: V2 coming!'
-      this.loadingFooter = '[info] contact: hi@snkh.me | discord: Snkh#8559'
-    }, 17000);
+    setTimeout(() => { this.loadingNumber = 100;}, 1000);
+    setTimeout(() => { this.loadingApplication = false; }, 5000)
   }
 }
 </script>

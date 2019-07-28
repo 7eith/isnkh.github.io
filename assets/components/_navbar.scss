@@ -1,0 +1,52 @@
+/* **************************************************************************** *
+*
+* _navbar.scss
+*
+* by: Snkh <iamsnkh@pm.me>
+*
+* Created: 28/07/2019 01:36 by Snkh
+* Project: snkh.me
+*
+**************************************************************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+navbar
+{
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  color: white;
+  padding-left: 15%;
+  padding-top: 15px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  // text-transform: uppercase;
+
+  .logo
+  {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  nav
+  {
+    display: inline-block;
+    ul li
+    {
+      display: inline-block;
+      padding-left: 10px;
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover
+        {
+          border-bottom: 1px solid white;
+          animation: opacity 1s;
+        }
+      }
+    }
+  }
+}

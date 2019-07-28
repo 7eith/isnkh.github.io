@@ -11,19 +11,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
 
+@import 'utils/reset_rules';
+
 body {
   background-color: black;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  color: white;
   font-family: 'Quicksand', sans-serif;
-  height: 100vh;
-  transition: opacity 0.4s;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 @import 'components/loading';
-
-
+@import 'components/navbar';
+@import 'components/global';
