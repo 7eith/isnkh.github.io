@@ -9,23 +9,35 @@
  *
  **************************************************************************** */
 
-.loading-container {
-  background-color: #DDDDDD;
-  border-radius: 6px;
-  width: 500px;
-  max-width: 85vw;
-  height: 10px;
-  margin-bottom: 10px;
-
-  .loading-bar {
-    margin-top: 8px;
-    border-radius: 6px;
-    height: 10px;
-    transition: width 7s;
-  }
-
-}
-
-.vue-typer .custom.char {
+.loadingComponent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  transition: opacity 0.4s;
+  overflow: hidden;
   color: white;
+  z-index: 1000;
+
+  .loading {
+    .loading-container {
+      background-color: #DDDDDD;
+      border-radius: 6px;
+      width: 500px;
+      max-width: 85vw;
+      height: 10px;
+      margin-bottom: 10px;
+
+      .loading-bar {
+        border-radius: 6px;
+        width: 0%;
+        height: 10px;
+        transition: width 4s;
+        background-color: rgb(92, 81, 157);
+      }
+    }
+  }
 }

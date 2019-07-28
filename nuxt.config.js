@@ -19,7 +19,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'fullstack dev, this is my portfolio in maintenance.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/logo.png' }
     ]
   },
   /*
