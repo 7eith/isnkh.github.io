@@ -1,0 +1,25 @@
+/* **************************************************************************** *
+ *
+ * app.scss
+ *
+ * by: Snkh <iamsnkh@pm.me>
+ *
+ * Created: 26/06/2019 01:37 by Snkh
+ * Project: snkh.me
+ *
+ **************************************************************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+@import 'utils/reset_rules';
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+@import 'components/loading';
+@import 'components/navbar';
+@import 'components/global';
