@@ -1,0 +1,67 @@
+/* ******************************************************************** */
+/*                                                                      */
+/*   [snkh.me] Navbar.scss                                              */
+/*                                                                      */
+/*   Author: Snkh <inquiries@snkh.me>                                   */
+/*                                                                      */
+/*   Created: 30/08/2019 23:08:30 by Snkh                               */
+/*   Updated: 31/08/2019 00:04:47 by Snkh                               */
+/*                                                                      */
+/*   Snkh Inc. (c) 2019 - GPL 3.0                                       */
+/*                                                                      */
+/* ******************************************************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$hamburger-padding-x           : 10px !default;
+$hamburger-padding-y           : 0px !default;
+$hamburger-layer-width         : 26px !default;
+$hamburger-layer-height        : 2px !default;
+$hamburger-layer-spacing       : 5px !default;
+$hamburger-layer-border-radius : 4px !default;
+$hamburger-layer-color         : white !default;
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+navbar {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  color: white;
+  padding-left: 15%;
+  padding-top: 15px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+
+  .logo
+  {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  nav
+  {
+    display: inline-block;
+    ul li
+    {
+      display: inline-block;
+      padding-left: 10px;
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover
+        {
+          border-bottom: 1px solid white;
+          animation: opacity 1s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  navbar { display: none; }
+  navbar .hamburger { display: block; }
+}
