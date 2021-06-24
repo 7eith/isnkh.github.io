@@ -1,14 +1,6 @@
 {
   "raffles":  [
     {
-		"id": "0",
-		"url": "https://www.nakedcph.com/en/product/11063/jordan-brand-air-jordan-1-low-og-cz0775-100",
-		"image": "https://www.lesitedelasneaker.com/wp-content/images/2021/03/air-jordan-1-low-og-neutral-grey-CZ0775-100-date-sortie8.jpg",
-		"name": "Air Jordan 1 Low OG \"Neutral Grey\"",
-		"raffle_tag": "83343",
-		"available": false
-    },
-    {
 		"id": "1",
 		"url": "https://www.nakedcph.com/xx/search/bysearchdefinition/1049",
 		"image": "https://images.stockx.com/images/adidas-Yeezy-450-Dark-Slate.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1614793271",
